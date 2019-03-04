@@ -1,0 +1,8 @@
+#results {
+    padding: 10px;
+}
+
+#search, #clear {
+    cursor: pointer;
+}
+

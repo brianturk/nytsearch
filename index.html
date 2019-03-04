@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NYT Search</title>
+
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+        integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container text-center">
+                <h1 class="display-4 mx-">New York Times Search</h1>
+            </div>
+        </div>
+
+
+
+        <div class="card">
+            <div class="card-header">
+                Search Parameters
+            </div>
+            <div class="card-body">
+                <div class="form-group">
+                    <label for="searchTerm">Search Term:</label>
+                    <input type="text" class="form-control" id="searchTerm" placeholder="">
+                </div>
+                
+                <div class="form-group">
+                        
+                    <label for="numRecords">Number of Records to Retrieve:</label>
+                    <select class="custom-select">
+                            <option selected>5</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="3">4</option>
+                            <option value="3">5</option>
+                            <option value="3">6</option>
+                            <option value="3">7</option>
+                            <option value="3">8</option>
+                            <option value="3">9</option>
+                            <option value="3">10</option>
+
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="startYear">Start Year:</label>
+                    <input type="text" value="" class="form-control" id="startYear" placeholder="">
+                </div>
+                <div class="form-group">
+                    <label for="endYear">End Year:</label>
+                    <input type="text" value="" class="form-control" id="endYear" placeholder="">
+                </div>
+
+                <span id="search">Search</span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span id="clear">Clear Results</span>
+            </div>
+        </div>
+
+        
+        <div class="card" style="margin-top:20px">
+                <div class="card-header">
+                    Top Articles
+                </div>
+                    <p id="results"></p>
+            </div>
+
+    </div>
+
+
+
+
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+        integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+        integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
